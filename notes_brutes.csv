@@ -1,0 +1,16 @@
+from modeles import Eleve
+
+e = Eleve(
+    "E001",
+    "Lucas",
+    "Martin",
+    "Générale",
+    maths=14.5,
+    francais=13,
+    anglais=16,
+    histoire=12.5,
+    svt=15,
+    physique=14
+)
+
+e.bulletin()
