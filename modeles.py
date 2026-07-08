@@ -56,6 +56,7 @@ class Eleve:
         moy_other = other.moyenne() or 0
         return moy_self < moy_other
 
+    # Challenge 2
 class Promotion:
     def __init__(self, nom, etablissement, filiere):
         self.nom = nom
