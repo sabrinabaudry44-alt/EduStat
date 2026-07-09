@@ -20,10 +20,16 @@ def charger_notes(chemin_csv):
     """
 
     # Lecture du fichier CSV
+    print("Je lis :", chemin_csv)
+
+    with open(chemin_csv, "r", encoding="utf-8") as f:
+     for i in range(5):
+        print(repr(f.readline()))
+
     df = pd.read_csv(
-        chemin_csv,
-        sep=";",
-        dtype=str
+    chemin_csv,
+    sep=";",
+    dtype=str
     ).fillna("")
 
     # Suppression des doublons
@@ -52,3 +58,4 @@ def charger_notes(chemin_csv):
         promotions[nom_etab].ajouter(eleve)
 
     return promotions
+

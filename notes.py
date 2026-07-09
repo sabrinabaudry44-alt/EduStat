@@ -1,3 +1,5 @@
+# Challenge 1
+
 """
 notes.py — Réseau Avenir+ / EduStat
 Script de génération FOURNI (Brief S9 — situation "EduStat").

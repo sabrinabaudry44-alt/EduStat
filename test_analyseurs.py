@@ -1,10 +1,12 @@
+# Challenge 3
+
 # test_analyseurs.py 
 # Teste la hiérarchie d'analyseurs : AnalyseurPromotion et ses trois classes filles.
 
 import pandas as pd
 
-from modeles import Eleve, Promotion
-from analyseurs import (
+from test_modeles import Eleve, Promotion
+from test_analyseurs import(
     AnalyseurPromotion,
     AnalyseurGenerale,
     AnalyseurTechno,
@@ -13,8 +15,8 @@ from analyseurs import (
 
 df = pd.read_csv("notes_brutes.csv")
 
-from modeles    import Eleve, Promotion
-from analyseurs import (AnalyseurPromotion, AnalyseurGenerale,
+from test_modeles    import Eleve, Promotion
+from test_analyseurs import (AnalyseurPromotion, AnalyseurGenerale,
                                 AnalyseurTechno, AnalyseurPro)
 
 # ── Construction manuelle des trois promotions ───────────────────────────────
