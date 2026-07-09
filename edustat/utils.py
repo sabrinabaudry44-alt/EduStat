@@ -19,13 +19,6 @@ def charger_notes(chemin_csv):
     regroupe les élèves par établissement.
     """
 
-    # Lecture du fichier CSV
-    print("Je lis :", chemin_csv)
-
-    with open(chemin_csv, "r", encoding="utf-8") as f:
-     for i in range(5):
-        print(repr(f.readline()))
-
     df = pd.read_csv(
     chemin_csv,
     sep=";",
