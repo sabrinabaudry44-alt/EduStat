@@ -1,0 +1,21 @@
+# Challenge 5
+
+# Environnement virtuel
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Données générées
+profil_edustat.csv
+
+# Fichiers système
+.DS_Store
+Thumbs.db

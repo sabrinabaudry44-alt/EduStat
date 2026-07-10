@@ -1,5 +1,7 @@
 # Challenge 4
 
+from edustat import ProfileurNotes
+
 """
 main.py
 
@@ -112,3 +114,24 @@ if __name__ == "__main__":
 print("\n" + "=" * 70)
 print("Analyse EduStat terminée avec succès.")
 print("=" * 70)
+
+# Challenge 5
+
+# ======================================================
+# PROFIL DES DONNÉES
+# ======================================================
+
+print("\n")
+print("=" * 70)
+print("             PROFIL DES DONNÉES")
+print("=" * 70)
+
+profiler = ProfileurNotes.depuis_csv(
+    "notes_brutes.csv",
+    separateur=";",
+    nom="EduStat 2023-2024"
+)
+
+profiler.profiler().rapport()
+
+profiler.exporter("profil_edustat.csv")

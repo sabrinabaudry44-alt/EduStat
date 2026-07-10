@@ -1,4 +1,6 @@
-from modeles import Eleve, Promotion
+# Challenge 2
+
+from edustat import Eleve, Promotion
 
 # ── Construction des instances ──────────────────────────────────────────────
 
