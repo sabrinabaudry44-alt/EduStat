@@ -2,11 +2,9 @@
 
 # Plan de répartition - Projet EduStat
 
-## Équipe
-
 Projet réalisé individuellement.
 
-**Nom :** Ton prénom et ton nom
+**Nom :** Sabrina Baudry
 
 ---
 

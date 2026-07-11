@@ -64,6 +64,7 @@ from .utils import charger_notes
 # Profiler
 # ==========================
 
+from .profiler import DataProfiler, ProfileurNotes
 from .profiler import (
     DataProfiler,
     ProfileurNotes,
