@@ -155,3 +155,11 @@ profil1.profiler()
 profil2.profiler()
 
 profil1.comparer(profil2)
+
+# EXCEL
+
+print("\n" + "=" * 60)
+print("BONUS : EXPORT EXCEL")
+print("=" * 60)
+
+pn.exporter_excel()

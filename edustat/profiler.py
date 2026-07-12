@@ -478,3 +478,36 @@ class ProfileurNotes(DataProfiler):
             fichier.write(html)
 
         print(f"\nRapport HTML créé : {chemin}")
+
+        # EXCEL
+
+    def exporter_excel(self, chemin="rapport_edustat.xlsx"):
+        """
+        Exporte les données dans un fichier Excel
+        avec un onglet par établissement.
+        """
+
+        with pd.ExcelWriter(chemin) as writer:
+
+            etablissements = (
+                self._df["etablissement"]
+                .dropna()
+                .unique()
+            )
+
+            for etablissement in etablissements:
+
+                df_etab = self._df[
+                    self._df["etablissement"] == etablissement
+                ]
+
+                # Le nom d'une feuille Excel est limité à 31 caractères
+                nom_feuille = str(etablissement)[:31]
+
+                df_etab.to_excel(
+                    writer,
+                    sheet_name=nom_feuille,
+                    index=False
+                )
+
+        print(f"\nRapport Excel créé : {chemin}")
